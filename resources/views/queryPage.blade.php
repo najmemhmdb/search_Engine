@@ -87,7 +87,8 @@
     <!-- PAGE CONTENT -->
     <div class="container">
         <div class="page-header" style="color:aliceblue"><h3>Search Engine</h3></div>
-        <form class="form-inline md-form form-sm mt-0 well" method="post" action="/result">
+        <form class="form-inline md-form form-sm mt-0 well"
+              method="post" action="/result">
             @csrf
             <i class="fa fa-search" aria-hidden="true"></i>
             <input class="form-control form-control-sm ml-3 w-75" type="text"

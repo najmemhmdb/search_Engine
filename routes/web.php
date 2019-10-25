@@ -1,5 +1,7 @@
 <?php
 
+use Maatwebsite\Excel\Facades\Excel;
+use App\Imports\ImportNews;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,9 +13,11 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('queryPage');
-//});
-//Route::get('/slide/{pic}','QueryController@loadPicture');
-//Route::post('/result','QueryController@getResult');
-Route::get('/','QueryController@readExcelFile');
+Route::get('/', function () {
+    return view('queryPage');
+});
+Route::get('/slide/{pic}','QueryController@loadPicture');
+Route::post('/result','QueryController@getResult');
+//Route::get('/','QueryController@readExcelFile');
+//Route::get('import-export', 'QueryController@importExport');
+//Route::post('import', 'QueryController@import');
